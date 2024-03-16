@@ -23,11 +23,13 @@ int main() {
     return 0;
 }
 
-// Sample Input 1
-// 5 2 
+/*
+Sample Input 1
+5 2 
 
-// Sample Input 2 
-// 2 2
+Sample Input 2 
+2 2
 
-// Sample Input 3 
-// 3 8
+Sample Input 3 
+3 8
+*/
