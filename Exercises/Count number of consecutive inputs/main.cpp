@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/*
+Count the number of consecutive inputs occur
+*/
+
 int main() {
     int curVal=0, val=0, count=0;
     
@@ -26,3 +30,11 @@ int main() {
 
     return 0;
 }
+
+/*
+Sample Input 1
+10 10 10 5 5 7 7 7 7
+
+Sample Input 2
+1 1 9 9 9 4 4
+*/
