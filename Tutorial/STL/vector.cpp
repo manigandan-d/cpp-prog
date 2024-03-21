@@ -6,17 +6,17 @@ using namespace std;
 
 void display(vector<int> nums) {
     for(int i=0; i<nums.size(); i++) {
-        // cout << num[i] << " ";
-        cout << nums.at(i) << " ";
+        cout << nums[i] << " ";
+        // cout << nums.at(i) << " ";
     }
-
     cout << endl;
 }
 
 void display_2d(vector<vector<int>> vect) {
     for(int i=0; i<vect.size(); i++) {
         for(int j=0; j<vect[i].size(); j++) {
-            cout << vect.at(i).at(j) << " ";
+            // cout << vect.at(i).at(j) << " ";
+            cout << vect[i][j] << " ";
         }
         cout << endl;
     }
@@ -196,7 +196,6 @@ int main() {
     // vector<int> v = {1, 2, 3, 4, 5};
 
     // vector<int> :: iterator it;
-
     // for(it=v.begin(); it != v.end(); it++) {
     //     cout << *it << " ";
     // }
@@ -207,6 +206,21 @@ int main() {
     //     cout << *rit << " ";
     // }
     // cout << endl;
+
+    // Iterator 
+    // vector<int> :: iterator it; 
+    // cout << *nums.begin() << " " << *(nums.end()-1) << endl;
+    // cout << *nums.rbegin() << " " << *(nums.rend()-1) << endl;
+
+    for(vector<int> :: iterator it = nums.begin(); it != nums.end(); it++) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    for(auto it=nums.begin(); it != nums.end(); it++) {
+        cout << *it << " ";
+    }
+    cout << endl;
 
     return 0;
 }
