@@ -10,6 +10,11 @@ void display(vector<int> nums) {
         // cout << nums.at(i) << " ";
     }
     cout << endl;
+
+    // for(auto i: nums) {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
 }
 
 void display_2d(vector<vector<int>> vect) {
