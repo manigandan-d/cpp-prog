@@ -36,7 +36,8 @@ void displayChar(vector<char> chars) {
 
 int main() {
     // Automatically filled with zero 
-    // vector<int> nums (10);
+    // vector<int> sparse (10);
+    // display(sparse);
 
     // Fill the value with given n
     // vector<int> data (5, 10);
@@ -54,6 +55,7 @@ int main() {
     // Initializer list 
     // vector<int> nums {12, 5, 3, 7, 10};
     vector<int> nums = {12, 5, 3, 7, 10};
+    display(nums);
 
     // size()
     // cout << nums.size() << endl;
@@ -121,15 +123,12 @@ int main() {
     // }
     // cout << endl;
 
-    // Display 
-    display(nums);
-
     // push_back()
     // nums.push_back(8);
-
+    // display(nums);
+    
     // emplace_back()
     // nums.emplace_back(2); // faster than push_back()
-
     // display(nums);
 
     // Out of range values 
