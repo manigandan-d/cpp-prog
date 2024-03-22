@@ -1,19 +1,21 @@
 #include <iostream>
-#include <vector>
+#include <list>
 
 using namespace std;
 
 int main() {
-    vector<int> nums = {3, 6, 15, 17, 18, 21, 55, 100, 200, 300};
-    int count = 0;
+    list<int> ls;
 
-    for(auto i: nums) {
-        if((i%3 == 0) || (i%5 == 0)) {
-            count += 1;
-        }
+    ls.push_back(5);
+    ls.emplace_back(7);
+
+    ls.push_front(3);
+    ls.emplace_front(1);
+
+    for(auto i: ls) {
+        cout << i << " ";
     }
-
-    cout << count << endl;
+    cout << endl;
 
     return 0;
 }
