@@ -1,33 +1,29 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
-void display(vector<int> vect) {
-    for(auto i: vect) {
-        cout << i << " ";
+int findDuplicate(vector<int>& nums) {
+    for(int i=0; i<nums.size(); i++) {
+        for(int j=i+1; j<nums.size(); j++) {
+            if(nums[i] == nums[j]) {
+                return nums[i];
+            }
+        }
     }
-    cout << endl;
 }
 
 int main() {
-    vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    display(v);
+    vector<int> vect;
+    int data;
 
-    vector<int> :: iterator it = v.begin();
-
-    while(it != v.end()) {
-        if(*it % 2 == 0) {
-            v.erase(it);
-        }
-
-        else {
-            it++;
-        }
+    while(cin >> data) {
+        vect.push_back(data);
     }
 
-    display(v);
+    int res = findDuplicate(vect);
+
+    cout << res << endl;
 
     return 0;
 }
