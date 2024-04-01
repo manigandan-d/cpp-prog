@@ -96,7 +96,7 @@ int main() {
     // nums.pop_back();
     // display(nums);
 
-    // insert() 
+    // insert() - very costly in terms of time 
     // list<int> :: iterator it = nums.begin();
     // it++; // error: it += 3;
     // // nums.insert(it, 9);
