@@ -24,5 +24,10 @@ int main() {
 
     display(dq);
 
+    dq.pop_back();
+    dq.pop_front();
+
+    display(dq);
+
     return 0;
 }
